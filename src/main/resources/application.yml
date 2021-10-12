@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:mariadb://192.168.1.177:3306/loadtest
+    url: jdbc:mysql://3.37.2.144:8000/bada?characterEncoding=UTF-8
     username: root
-    password: password
+    password: 1234
 #    url: jdbc:mariadb://localhost:3306/loadtest
 #    username: darass
 #    password: local
-    driver-class-name: org.mariadb.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximumPoolSize: 3
   jpa:
@@ -19,7 +19,7 @@ spring:
     console:
       enabled: true
   redis:
-    host: localhost
+    host: 3.37.202.55
     password: password
     port: 8000
     pool:
