@@ -18,7 +18,18 @@ spring:
   h2:
     console:
       enabled: true
+
+  redis:
+    host: 3.35.9.91
+    password: password
+    port: 8888
+    pool:
+      max-idel: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
 logging:
   level:
     com.zaxxer.hikari.HikariConfig: DEBUG
     com.zaxxer.hikari: TRACE
+
