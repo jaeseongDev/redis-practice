@@ -103,9 +103,9 @@ public class TestController {
         return "ok";
     }
 
-    @GetMapping("/get")
-    public String get() {
-        Optional<Post> byId = postRepository.findById(1L);
-        return byId.toString();
-    }
+//    @GetMapping("/get")
+//    public String get() {
+//        Optional<Post> byId = postRepository.findById(1L);
+//        return byId.toString();
+//    }
 }
